@@ -15,7 +15,7 @@ function getTime() {
 
 function init() {
   getTime();
-  setInterval(getTime, 1000);
+  setInterval(getTime, 1000); // getTime 함수를 1초마다 반복.
 }
 
 init();
