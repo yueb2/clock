@@ -1,5 +1,5 @@
 body {
-  background-color: #ecf0f1;
+  background-color: #8e44ad;
 }
 
 .btn {
@@ -21,4 +21,24 @@ body {
 
 .showing {
   display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* z-index를 -1로 둠으로써 배경으로 사용되도록 한다.*/
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
 }
